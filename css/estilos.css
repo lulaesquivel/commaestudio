@@ -672,7 +672,9 @@ footer {
   margin: 0 auto;
   border-radius: 10px;
 }
-
+.lado-gif {
+  display: none;
+}
 
 
 
@@ -884,6 +886,9 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
   }
+  .lado-gif {
+  display: none;
+}
 }
 
 @media (min-width: 900px) {
@@ -917,5 +922,48 @@ footer {
     gap: 6em;
 
   }
-  
+    .formulario-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+  .lado-gif {
+    display: block;
+    text-align: center;
+    align-self: center;
+    width: 100%;
+  }
+    .lado-gif img {
+    margin-top: 0;
+  }
+    .carrusel-radio {
+    max-width: 960px; /* 320px x 3 slides */
+  }
+  .slides {
+    width: 1920px; /* Puedes ajustar si tienes más slides */
+  }
+  .seccionproyectos {
+    flex: 0 0 320px; /* Mantén el ancho fijo si tus imágenes son de 320px */
+  }
+
+  /* Ajusta los desplazamientos para mostrar 3 slides */
+  #slide1:checked ~ .slides {
+    transform: translateX(0);
+  }
+  #slide2:checked ~ .slides {
+    transform: translateX(-320px);
+  }
+  #slide3:checked ~ .slides {
+    transform: translateX(-640px);
+  }
+  #slide4:checked ~ .slides {
+    transform: translateX(-960px);
+  }
+  #slide5:checked ~ .slides {
+    transform: translateX(-1280px);
+  }
+  #slide6:checked ~ .slides {
+    transform: translateX(-1600px);
+  }
 }
