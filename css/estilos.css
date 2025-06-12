@@ -134,13 +134,7 @@ img{
     box-align: center;
     margin: 0 auto;
 }
-footer{
-    background-color: #000000;
-    padding: 2em;
-    text-align: center;
-    color: #ffffff;
-    font-family: roboto, sans-serif;
-}
+
 #redes{
 text-align: center;
 }
@@ -675,8 +669,30 @@ footer {
 .lado-gif {
   display: none;
 }
-
-
+.serviciosboton {
+  padding: 1em 4em;
+  align-content: center;
+}
+p {
+  font-size: 1.2rem;
+  padding: .5em .5em;
+  text-align: left;
+}
+section.contacto p {
+  padding: 0;
+  text-align: right;
+}
+footer{
+    background-color: #000000;
+    padding: 2em;
+    text-align: center;
+    color: #ffffff;
+    font-family: roboto, sans-serif;
+}
+footer p {
+  text-align: center;
+    padding: .5em 0;
+}
 
 @media screen and (min-width: 600px) {
 
@@ -742,8 +758,11 @@ footer {
   h3 {
     font-size: 1.8rem;
   }
-  p {
+
+body p:not(.contacto p)  {
     font-size: 1.4rem;
+    padding: .5em 3em;
+    text-align: justify;
   }
 
 
@@ -892,6 +911,13 @@ footer {
 }
 
 @media (min-width: 900px) {
+
+  p {
+  font-size: 1.4rem;
+  padding: .5em 3em;
+  text-align: justify;
+}
+
   .proyectos-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -965,5 +991,23 @@ footer {
   }
   #slide6:checked ~ .slides {
     transform: translateX(-1600px);
+  }
+    .servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+    align-items: start;
+  }
+  .serviciosboton img {
+    width: 80px;
+  }
+  .serviciosboton figcaption a {
+    font-size: 1.8em
+}
+  .serviciosboton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
