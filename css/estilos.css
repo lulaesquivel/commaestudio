@@ -44,10 +44,21 @@ ul, ol, li{
 .menu-icon {
   font-size: 30px;
   cursor: pointer;
-  display: none;
-  color: white; 
+  color: white;
+  display: block;
+  position: relative;
+  z-index: 30;
+}
+.menu-icon::before {
+  content: "☰";
+  display: block;
+  transition: content 0.3s;
 }
 
+
+#menu-toggle:checked + .menu-icon::before {
+  content: "✖";
+}
 
 .menu-list {
   list-style: none;
@@ -479,6 +490,7 @@ flex-direction: column;
     top: 60px;
     left: 0;
     width: 100%;
+      z-index: 20;
   }
 
   #menu-toggle:checked + .menu-icon + nav .menu-list {
