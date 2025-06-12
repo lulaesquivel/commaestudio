@@ -9,6 +9,15 @@
 header{
     font-family: roboto, sans-serif;
     color: 000000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+        background-color: #000000;
+font-size: small;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    padding: .5em;
 }
 
 main{
@@ -25,14 +34,7 @@ img{
 #logo{
     width: 30%; 
 }
-header{
-    background-color: #000000;
-font-size: small;
-    display: flex ;
-    align-items: center;
-    justify-content: center;
-    padding: .5em;
-}
+
 
 ul, ol, li{
     list-style: none;
