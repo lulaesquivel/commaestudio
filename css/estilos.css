@@ -7,6 +7,7 @@
 }
 
 header{
+
     font-family: roboto, sans-serif;
     color: 000000;
     position: sticky;
@@ -17,10 +18,11 @@ header{
     font-family: roboto, sans-serif;
 font-size: small;
     display: flex ;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    padding: .5em;
-
+    justify-content: space-between;
+    padding: 1em;
+    gap: 1em;
 }
 
 main{
@@ -35,7 +37,7 @@ img{
 }
 
 #logo{
-    width: 30%; 
+    width: 20%; 
 }
 
 
@@ -53,6 +55,8 @@ ul, ol, li{
   display: block;
   position: relative;
   z-index: 30;
+  margin-left: auto;
+
 }
 .menu-icon::before {
   content: "☰";
@@ -72,7 +76,9 @@ ul, ol, li{
   padding: 10px;
   margin: 20px;
 }
-
+.menu-list a {
+  display: inline-block;
+}
 
 .menu-list li ul {
   display: none;
@@ -84,7 +90,12 @@ ul, ol, li{
 .menu-list li:hover ul {
   display: block;
 }
-
+.coma-menu {
+  width: 18px;
+  height: auto;
+  margin-right: 8px;
+  vertical-align: middle;
+}
 
 
 a{
