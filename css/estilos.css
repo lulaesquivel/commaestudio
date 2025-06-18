@@ -97,6 +97,9 @@ ul, ol, li{
   vertical-align: middle;
 }
 
+h1{
+padding-left: 0.5em;
+}
 
 a{
     text-decoration: none;
@@ -201,7 +204,9 @@ text-align: center;
     margin: 0 auto;
     display: block;
   }
-
+.griddedo {
+  display: block;
+}
 figure{
     margin: 0 auto;
     padding: 0;
@@ -813,6 +818,7 @@ footer p {
   
   h1 {
     font-size: 3rem;
+    padding-left: ;
   }
 
   h2 {
@@ -1140,7 +1146,6 @@ main {    padding-top: 0em;
   }
 
   .botonfinal{
-
     text-align: center;
     border-radius: 0px;
     padding: 10px 10px;
@@ -1148,5 +1153,45 @@ main {    padding-top: 0em;
   margin: 0 auto;
   display: block;
 }
+.griddedoss {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 2em;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.griddedoss .serviciosboton {
+  justify-self: center;
+}
+
+.griddedoss p {
+  margin: 0;
+}
+.griddedoss {
+  margin-bottom: 3em;
+}
+.griddedo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 2em;
+  margin-bottom: 2em;
+  padding-left: 2em;
+  align-items: center;
+}
+
+.griddedo h1  {
+  font-size: 4em;
+padding-left: 1em;
+}
+
+.griddedo img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+}
+
 }
 
