@@ -1067,8 +1067,9 @@ main {    padding-top: 0em;
     align-items: start;
   }
   .serviciosboton img {
-    width: 50%;
+    width: 100%;
   }
+
   .serviciosboton figcaption a {
     font-size: 1.8rem;
   }
@@ -1137,5 +1138,15 @@ main {    padding-top: 0em;
   .seccionproyectos figure {
     display: none;
   }
+
+  .botonfinal{
+
+    text-align: center;
+    border-radius: 0px;
+    padding: 10px 10px;
+    width: 25%;
+  margin: 0 auto;
+  display: block;
+}
 }
 
